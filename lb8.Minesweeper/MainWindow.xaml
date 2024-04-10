@@ -7,15 +7,14 @@
         mc:Ignorable="d"
         Title="Minesweeper by Sanyok" Height="800" Width="900" MinHeight="800" MinWidth="900">
 
-
-
     <Grid Name="MainGrid">
-
-        <Button x:Name="Confirm" Content="Подтвердить" Margin="401,10,0,0" Height="44" VerticalAlignment="Top" HorizontalAlignment="Center" Width="116" Click="Confirm_Click"/>
+        <Button x:Name="Confirm" Content="Подтвердить" Margin="401,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Height="44"  Width="116" Click="Confirm_Click"/>
+        <Button x:Name="Restart" Content="⟳"          Margin="550,19,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Height="20"  Width="20" Click="Restart_Click" IsEnabled="False"/>
+        <Label  x:Name="time"    Content="00:00:00"    Margin="718,19,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"  Width="60" HorizontalContentAlignment="Center"/>
+        <Label  x:Name="countMines"                    Margin="-550,19,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="60"/>
+        <TextBox x:Name="uName"                        Margin="-750,23,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="120" TextWrapping="Wrap"/>
 
         <UniformGrid x:Name="GameGrid" HorizontalAlignment="Center" VerticalAlignment="Center" Height="404" Width="880" Margin="0,0,0,10"/>
-
         <Slider Name="lvl" Margin="-64,21,0,0" ValueChanged="lvl_ValueChanged" Height="22" VerticalAlignment="Top" HorizontalAlignment="Center" Width="326" SmallChange="1" Minimum="3" Maximum="20"/>
-
     </Grid>
 </Window>
